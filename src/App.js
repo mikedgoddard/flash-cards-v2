@@ -66,5 +66,15 @@ const questions = [
 ];
 
 function FlashCards() {
-	return <div>TODO:</div>;
+	return (
+		<section>
+			{/* Lets grab the questions using .map on the questions array - Going to use <ul> for semantics*/}
+			<ul className='flashcards'>
+				{questions.map((question) => (
+					<li>{question.question}</li>
+				))}
+				;
+			</ul>
+		</section>
+	);
 }
